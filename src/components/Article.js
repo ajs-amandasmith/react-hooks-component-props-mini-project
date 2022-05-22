@@ -1,4 +1,5 @@
 import React from 'react';
+import Minutes from './Minutes';
 
 function Article({
   title, 
@@ -11,6 +12,7 @@ function Article({
       <h3>{title}</h3>
       <small>{date}</small>
       <p>{preview}</p>
+      <Minutes minutes={minutes} />
     </article>
   )
 }
